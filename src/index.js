@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
+import './config/ReactotronConfig';
+
 const styles = StyleSheet.create({
   engine: {
     position: 'absolute',
@@ -31,10 +33,12 @@ const styles = StyleSheet.create({
   },
 });
 
+console.tron.log('test');
+
 export default function App() {
   return (
     <View style={styles.sectionContainer}>
-      <Text style={styles.sectionTitle}>Hello! OK...</Text>
+      <Text style={styles.sectionTitle}>Hello!</Text>
       <Text style={styles.sectionDescription}>
         GitHub Reader version React Native
       </Text>
