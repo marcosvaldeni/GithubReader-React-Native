@@ -1,25 +1,5 @@
-import React, {Component} from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.sectionContainer}>
-        <Text style={styles.sectionTitle}>Hello!</Text>
-        <Text style={styles.sectionDescription}>
-          GitHub Reader version React Native
-        </Text>
-      </View>
-    );
-  }
-}
+import React from 'react';
+import { StyleSheet, View, Text } from 'react-native';
 
 const styles = StyleSheet.create({
   engine: {
@@ -50,3 +30,14 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 });
+
+export default function App() {
+  return (
+    <View style={styles.sectionContainer}>
+      <Text style={styles.sectionTitle}>Hello! OK...</Text>
+      <Text style={styles.sectionDescription}>
+        GitHub Reader version React Native
+      </Text>
+    </View>
+  );
+}
